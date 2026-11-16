@@ -1,0 +1,12 @@
+# Your own services — one per line. This file feeds healthcheck.py.
+# Format:
+#   http://127.0.0.1:PORT/path   Name=label   contains=expected-text
+#   tcp://127.0.0.1:PORT         Name=label
+# contains= and Name= are optional. status=NNN for exact status.
+#
+# If a patch makes "contains=" text disappear, healthcheck flags DOWN instantly.
+
+http://127.0.0.1:8080/            Name=webapp        contains=Welcome
+http://127.0.0.1:8443/login       Name=bearcraft     contains=login
+tcp://127.0.0.1:9000              Name=fileserver
+tcp://127.0.0.1:1337              Name=gameservice

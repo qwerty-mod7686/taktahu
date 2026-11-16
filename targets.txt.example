@@ -1,0 +1,6 @@
+# One URL per line. IPs come from the organiser's service list — no scanning.
+# Comments start with #.
+http://10.10.1.1:8080/login
+http://10.10.2.1:8080/login
+http://10.10.3.1:8080/login
+# http://10.10.4.1:3000/api/search   <- different service, separate run
